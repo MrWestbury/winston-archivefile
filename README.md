@@ -10,8 +10,8 @@ myLog.2015-03-30.log <= Yesterdays log file
 This is also my first github project of my own. So any feedback/help is more than welcome.
 
 Most of the code is a copy of the DailyRotateFile transport code in the main winton repository
-https://github.com/winstonjs/winston/blob/master/lib/winston/transports/daily-rotate-file.js
-https://github.com/winstonjs/winston/
+* [DailyRotateFile][1]
+* [winston][0]
 
 ##Usage##
 ```
@@ -22,6 +22,15 @@ winston.add(winston.transports.ArchiveFile, options);
 ```
 
 ##Options##
-filename - full path and filename of the log file default: ./winston.log
-archivedir - path to archive old log files to: default: dir of filename
-formatter - function to format the entry. signature function(level, msg, meta, callback). default: {timestamp} {level} {message} {meta}
+ArchiveFile takes the following options:
+
+* __filename__ : full path and filename of the log file default: ./winston.log
+* __archivedir__ : path to archive old log files to: default: dir of filename
+* __formatter__ : function to format the entry. signature function(level, msg, meta, callback). default: {timestamp} {level} {message} {meta}
+* __EOL__ : End of line char sequence. default: \n
+
+##LICENCE##
+MIT licence
+
+[0]: https://github.com/flatiron/winston
+[1]: https://github.com/winstonjs/winston/blob/master/lib/winston/transports/daily-rotate-file.js
