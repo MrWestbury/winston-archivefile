@@ -2,9 +2,11 @@
   "name": "winston-archivefile",
   "version": "0.0.3",
   "description": "Winston transport to automatically archive old log files",
-  "main": "lib/winston-archivefile.js",
+  "main": "./lib/winston-archivefile.js",
   "directories": {
-    "example": "example"
+    "example": "example",
+    "test": "spec",
+    "lib": "lib"
   },
   "scripts": {
     "test": "jasmine-node spec"

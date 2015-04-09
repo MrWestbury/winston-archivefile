@@ -16,9 +16,17 @@ Most of the code is a copy of the DailyRotateFile transport code in the main win
 ##Usage##
 ```
 var winston = require('winston');
-require('winston-archivefile');
+var archiveFile = require('winston-archivefile');
 
-winston.add(winston.transports.ArchiveFile, options);
+var options = {
+	filename: "myLog.log",
+	archivedir: "archive"
+};
+
+var trans = new archiveFile(options);
+var logger = new winston.Logger({
+	transports: [trans]
+});
 ```
 
 ##Options##
