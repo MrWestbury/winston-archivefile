@@ -26,7 +26,7 @@ ArchiveFile takes the following options:
 
 * __filename__ : full path and filename of the log file default: ./winston.log
 * __archivedir__ : path to archive old log files to: default: dir of filename
-* __formatter__ : function to format the entry. signature function(level, msg, meta, callback). default: {timestamp} {level} {message} {meta}
+* __formatter__ : function to format the entry. signature function(level, msg, meta). default format: {timestamp} {level} {message} {meta}
 * __EOL__ : End of line char sequence. default: \n
 
 ##Testing##
