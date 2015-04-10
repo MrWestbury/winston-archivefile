@@ -1,6 +1,6 @@
 {
   "name": "winston-archivefile",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Winston transport to automatically archive old log files",
   "main": "./lib/winston-archivefile.js",
   "directories": {
