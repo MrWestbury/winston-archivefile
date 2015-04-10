@@ -4,8 +4,8 @@ var winston = require('winston');
 require('winston-archivefile');
 
 var options = {
-	filename: "logs/archfile.log",
-	archivedir: "logs/archive"
+	filename: "archfile.log",
+	archivedir: "archive"
 };
 
 var trans = new winston.transports.ArchiveFile(options);

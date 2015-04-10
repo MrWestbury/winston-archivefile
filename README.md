@@ -1,6 +1,6 @@
-#winston-archivefile#
+# winston-archivefile #
 
-##Motivation##
+## Motivation ##
 I needed a winston transport that rotated the log file by writing a constant filename and only add the date when the date rolls over.
 e.g.
 
@@ -13,7 +13,7 @@ Most of the code is a copy of the DailyRotateFile transport code in the main win
 * [DailyRotateFile][1]
 * [winston][0]
 
-##Usage##
+## Usage ##
 ```
 var winston = require('winston');
 var archiveFile = require('winston-archivefile');
@@ -29,7 +29,7 @@ var logger = new winston.Logger({
 });
 ```
 
-##Options##
+## Options ##
 ArchiveFile takes the following options:
 
 * __filename__ : full path and filename of the log file default: ./winston.log
@@ -37,7 +37,7 @@ ArchiveFile takes the following options:
 * __formatter__ : function to format the entry. signature function(level, msg, meta). default format: {timestamp} {level} {message} {meta}
 * __EOL__ : End of line char sequence. default: \n
 
-##Testing##
+## Testing ##
 Unit tests written using [jasmine-node][2]. 
 Simply run 
 ```
@@ -46,7 +46,7 @@ jasmine-node spec
 
 Unit tests are a bit thin on the ground and I must put more effort into them, I know. If anyone else wants to write them please feel free.
 
-##LICENCE##
+## LICENCE ##
 MIT licence
 
 [0]: https://github.com/flatiron/winston
